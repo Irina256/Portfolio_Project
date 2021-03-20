@@ -2,7 +2,7 @@
 
 :root {
   --primary-white: #fff;
-  --primary-pink: rgb(241, 129, 148);
+  --primary-orange: #f9ab00;
   --primary-dark: rgba(255,255,255, 0);
 }
 
@@ -13,8 +13,7 @@ font-family: "Roboto Condesed" sans-serif;
 
 /************************ NAVBAR *********************************/
 .logo {
-
-  width: 11.25rem;
+  width: 16.25rem;
 }
 
 /*----- MENU LINKS --------*/
@@ -42,9 +41,9 @@ nav ul li {
 }
 
 .navbar-nav > li > a.active,  .navbar-nav > li > a.active:focus {
-  border-top: 0.1875rem solid var(--primary-pink);
+  border-top: 0.1875rem solid var(--primary-orange);
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-pink);
+  border-top: 0.1875rem solid var(--primary-orange);
 }
