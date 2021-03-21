@@ -1,4 +1,7 @@
 import React from "react";
+import resume from "../Irina_qa.docx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const Experience = () => {
   return (
@@ -25,6 +28,20 @@ const Experience = () => {
           </div>
         </div>
       </div>
+      <div className="">
+        <h3>Click to download my resume!</h3>
+      </div>
+      <form
+        method="get"
+        action={resume}
+        target="_blank"
+        className="download-button-container"
+      >
+        <button className="btn-main-offer download">
+          <FontAwesomeIcon icon={faDownload} />
+          Download
+        </button>
+      </form>
     </div>
   );
 };

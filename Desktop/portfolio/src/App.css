@@ -235,3 +235,18 @@ z-index: 1;
     width: 100%;
   }
 }
+
+h3 {
+  text-align: center;
+  margin-top: 1rem;
+  color:var(--primary-pink) 
+}
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+ .download{
+  color: var(--primary-dark-grey);
+}
