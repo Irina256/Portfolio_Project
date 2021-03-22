@@ -1,4 +1,6 @@
 import "./App.css";
+import { HashRouter, Route, Switch } from "react-router-dom";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
@@ -12,34 +14,36 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Particles
-        className="particles-canvas"
-        params={{
-          particles: {
-            number: {
-              value: 30,
-              density: {
-                enable: true,
-                value_area: 900,
+      <HashRouter basename={process.env.PUBLIC_URL}>
+        <Particles
+          className="particles-canvas"
+          params={{
+            particles: {
+              number: {
+                value: 30,
+                density: {
+                  enable: true,
+                  value_area: 900,
+                },
+              },
+              shape: {
+                type: "circle",
+                stroke: {
+                  width: 6,
+                  color: "#f9ab00",
+                },
               },
             },
-            shape: {
-              type: "circle",
-              stroke: {
-                width: 6,
-                color: "#f9ab00",
-              },
-            },
-          },
-        }}
-      />
-      <Navbar />
-      <Header />
-      <AboutMe />
-      <Experience />
-      <Portfolio />
-      <Contacts />
-      <Footer />
+          }}
+        />
+        <Navbar />
+        <Header />
+        <AboutMe />
+        <Experience />
+        <Portfolio />
+        <Contacts />
+        <Footer />
+      </HashRouter>
     </>
   );
 }
