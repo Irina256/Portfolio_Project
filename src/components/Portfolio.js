@@ -2,6 +2,8 @@ import React from "react";
 import devconnect from "../images/Shop.png";
 import exploreoutdoors from "../images/Rome.jpg";
 import techblog from "../images/tech-blog.png";
+import devconnect2 from "../images/devconnect.png";
+
 import biweekly from "../images/search-engine-optimization.jpg";
 import budget from "../images/budget.png";
 import telegram from "../images/telegram.jpg";
