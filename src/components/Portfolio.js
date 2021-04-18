@@ -2,10 +2,9 @@ import React from "react";
 import devconnect from "../images/Shop.png";
 import exploreoutdoors from "../images/Rome.jpg";
 import techblog from "../images/tech-blog.png";
-import devconnect2 from "../images/devconnect.png";
-
 import biweekly from "../images/search-engine-optimization.jpg";
 import budget from "../images/budget.png";
+import dev2 from "../images/dev2.png";
 import telegram from "../images/telegram.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -28,16 +27,6 @@ const Portfolio = () => {
           onClick={() => window.open("https://github.com/Irina256/dev-connect")}
         >
           https://github.com/Irina256/dev-connect
-        </a>
-        <br />
-        <b>Deployed site </b>
-        <a
-          className="hyper-link"
-          onClick={() =>
-            window.open(" https://dev-connect-ac.herokuapp.com/login")
-          }
-        >
-          https://dev-connect-ac.herokuapp.com/login{" "}
         </a>
       </>
     );
@@ -71,16 +60,6 @@ const Portfolio = () => {
         >
           https://github.com/Irina256/Explore-Outdoors
         </a>
-        <br />
-        <b>Deployed site</b>
-        <a
-          className="hyper-link"
-          onClick={() =>
-            window.open(" https://ajcuddeback.github.io/Explore-Outdoors/")
-          }
-        >
-          https://ajcuddeback.github.io/Explore-Outdoors/
-        </a>
       </>
     );
     PopupboxManager.open({ content });
@@ -93,7 +72,44 @@ const Portfolio = () => {
     fadeIn: true,
     fadeInSpeed: 500,
   };
-
+  //dev2
+  const openPopupboxdev2 = () => {
+    const content = (
+      <>
+        <img
+          className="portfolio-image-popupbox"
+          src={dev2}
+          alt="Explore Outdoors"
+        />
+        <p> Lorem Ipsum</p>
+        <b>Deployed App:</b>
+        <a
+          className="hyper-link"
+          onClick={() => window.open("https://dev-connect-v2.herokuapp.com/")}
+        >
+          https://dev-connect-v2.herokuapp.com/
+        </a>
+        <b>GitHub:</b>
+        <a
+          className="hyper-link"
+          onClick={() =>
+            window.open("https://github.com/Irina256/dev-connect-v2")
+          }
+        >
+          https://github.com/Irina256/dev-connect-v2
+        </a>
+      </>
+    );
+    PopupboxManager.open({ content });
+  };
+  const popupboxConfigdev2 = {
+    titleBar: {
+      enable: true,
+      text: "Dev2",
+    },
+    fadeIn: true,
+    fadeInSpeed: 500,
+  };
   //techblog
   const openPopupboxtechblog = () => {
     const content = (
@@ -110,16 +126,6 @@ const Portfolio = () => {
           onClick={() => window.open("https://github.com/Irina256/Tech-blog")}
         >
           https://github.com/Irina256/Tech-blog
-        </a>
-        <br />
-        <b>Deployed site:</b>
-        <a
-          className="hyper-link"
-          onClick={() =>
-            window.open(" https://limitless-gorge-94169.herokuapp.com/")
-          }
-        >
-          https://limitless-gorge-94169.herokuapp.com/
         </a>
       </>
     );
@@ -153,16 +159,6 @@ const Portfolio = () => {
         >
           https://github.com/Irina256/Work-Day-Scheduler
         </a>
-        <br />
-        <b>Deployed site</b>
-        <a
-          className="hyper-link"
-          onClick={() =>
-            window.open("https://irina256.github.io/Work-Day-Scheduler/")
-          }
-        >
-          https://irina256.github.io/Work-Day-Scheduler/
-        </a>
       </>
     );
     PopupboxManager.open({ content });
@@ -189,16 +185,6 @@ const Portfolio = () => {
           }
         >
           https://github.com/Irina256/budget-tracker
-        </a>
-        <br />
-        <b>Deployed site</b>
-        <a
-          className="hyper-link"
-          onClick={() =>
-            window.open("https://damp-hamlet-23141.herokuapp.com/")
-          }
-        >
-          https://damp-hamlet-23141.herokuapp.com/
         </a>
       </>
     );
@@ -231,16 +217,6 @@ const Portfolio = () => {
         >
           https://github.com/Irina256/urban-octo-telegram
         </a>
-        <br />
-        <b>Deployed site:</b>
-        <a
-          className="hyper-link"
-          onClick={() =>
-            window.open(" https://irina256.github.io/urban-octo-telegram/")
-          }
-        >
-          https://irina256.github.io/urban-octo-telegram/
-        </a>
       </>
     );
     PopupboxManager.open({ content });
@@ -249,45 +225,6 @@ const Portfolio = () => {
     titleBar: {
       enable: true,
       text: "Telegram Project",
-    },
-    fadeIn: true,
-    fadeInSpeed: 500,
-  };
-  //devconnect2
-  const openPopupboxdevconnect2 = () => {
-    const content = (
-      <>
-        <img
-          className="portfolio-image-popupbox"
-          src={devconnect2}
-          alt="Explore Outdoors"
-        />
-        <p> Lorem Ipsum</p>
-        <b>GitHub:</b>
-        <a
-          className="hyper-link"
-          onClick={() =>
-            window.open("https://github.com/Irina256/dev-connect-v2")
-          }
-        >
-          https://github.com/Irina256/dev-connect-v2
-        </a>
-
-        <b>Deployed App:</b>
-        <a
-          className="hyper-link"
-          onClick={() => window.open(" https://dev-connect-v2.herokuapp.com")}
-        >
-          https://dev-connect-v2.herokuapp.com
-        </a>
-      </>
-    );
-    PopupboxManager.open({ content });
-  };
-  const popupboxConfigdevconnect2 = {
-    titleBar: {
-      enable: true,
-      text: "Dev-Connect",
     },
     fadeIn: true,
     fadeInSpeed: 500,
@@ -341,15 +278,8 @@ const Portfolio = () => {
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
-          <div
-            className="portfolio-image-box"
-            onClick={openPopupboxdevconnect2}
-          >
-            <img
-              className="portfolio-image"
-              src={devconnect2}
-              alt="Telegram.."
-            />
+          <div className="portfolio-image-box" onClick={openPopupboxdev2}>
+            <img className="portfolio-image" src={dev2} alt="Telegram.." />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
@@ -357,11 +287,11 @@ const Portfolio = () => {
       </div>
       <PopupboxContainer {...popupboxConfigDevConnect} />
       <PopupboxContainer {...popupboxConfigtelegram} />
+      <PopupboxContainer {...popupboxConfigdev2} />
       <PopupboxContainer {...popupboxConfigbudget} />
       <PopupboxContainer {...popupboxConfigbiweekly} />
       <PopupboxContainer {...popupboxConfigtechblog} />
       <PopupboxContainer {...popupboxConfigexploreoutdoors} />
-      <PopupboxContainer {...popupboxConfigdevconnect2} />
     </div>
   );
 };
