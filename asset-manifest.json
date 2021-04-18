@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio_Project/static/css/main.93b8237b.chunk.css",
-    "main.js": "/Portfolio_Project/static/js/main.f7f42c74.chunk.js",
-    "main.js.map": "/Portfolio_Project/static/js/main.f7f42c74.chunk.js.map",
+    "main.js": "/Portfolio_Project/static/js/main.c97ecce7.chunk.js",
+    "main.js.map": "/Portfolio_Project/static/js/main.c97ecce7.chunk.js.map",
     "runtime-main.js": "/Portfolio_Project/static/js/runtime-main.10a88eb8.js",
     "runtime-main.js.map": "/Portfolio_Project/static/js/runtime-main.10a88eb8.js.map",
     "static/css/2.69fa47e5.chunk.css": "/Portfolio_Project/static/css/2.69fa47e5.chunk.css",
@@ -18,6 +18,7 @@
     "static/media/Rome.b875a0d4.jpg": "/Portfolio_Project/static/media/Rome.b875a0d4.jpg",
     "static/media/Shop.1b1356d1.png": "/Portfolio_Project/static/media/Shop.1b1356d1.png",
     "static/media/budget.15aaeb09.png": "/Portfolio_Project/static/media/budget.15aaeb09.png",
+    "static/media/dev2.bd78c7ae.png": "/Portfolio_Project/static/media/dev2.bd78c7ae.png",
     "static/media/logo.5f460558.png": "/Portfolio_Project/static/media/logo.5f460558.png",
     "static/media/me.bbd83932.jpg": "/Portfolio_Project/static/media/me.bbd83932.jpg",
     "static/media/search-engine-optimization.e0cd983e.jpg": "/Portfolio_Project/static/media/search-engine-optimization.e0cd983e.jpg",
@@ -30,6 +31,6 @@
     "static/css/2.69fa47e5.chunk.css",
     "static/js/2.519dc48c.chunk.js",
     "static/css/main.93b8237b.chunk.css",
-    "static/js/main.f7f42c74.chunk.js"
+    "static/js/main.c97ecce7.chunk.js"
   ]
 }
