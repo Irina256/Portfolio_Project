@@ -4,6 +4,7 @@ import exploreoutdoors from "../images/Rome.jpg";
 import techblog from "../images/tech-blog.png";
 import biweekly from "../images/search-engine-optimization.jpg";
 import budget from "../images/budget.png";
+import dev2 from "../images/dev2.png";
 import telegram from "../images/telegram.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -71,7 +72,44 @@ const Portfolio = () => {
     fadeIn: true,
     fadeInSpeed: 500,
   };
-
+  //dev2
+  const openPopupboxdev2 = () => {
+    const content = (
+      <>
+        <img
+          className="portfolio-image-popupbox"
+          src={dev2}
+          alt="Explore Outdoors"
+        />
+        <p> Lorem Ipsum</p>
+        <b>Deployed App:</b>
+        <a
+          className="hyper-link"
+          onClick={() => window.open("https://dev-connect-v2.herokuapp.com/")}
+        >
+          https://dev-connect-v2.herokuapp.com/
+        </a>
+        <b>GitHub:</b>
+        <a
+          className="hyper-link"
+          onClick={() =>
+            window.open("https://github.com/Irina256/dev-connect-v2")
+          }
+        >
+          https://github.com/Irina256/dev-connect-v2
+        </a>
+      </>
+    );
+    PopupboxManager.open({ content });
+  };
+  const popupboxConfigdev2 = {
+    titleBar: {
+      enable: true,
+      text: "Dev2",
+    },
+    fadeIn: true,
+    fadeInSpeed: 500,
+  };
   //techblog
   const openPopupboxtechblog = () => {
     const content = (
@@ -240,10 +278,16 @@ const Portfolio = () => {
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
+          <div className="portfolio-image-box" onClick={openPopupboxdev2}>
+            <img className="portfolio-image" src={dev2} alt="Telegram.." />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+          </div>
         </div>
       </div>
       <PopupboxContainer {...popupboxConfigDevConnect} />
       <PopupboxContainer {...popupboxConfigtelegram} />
+      <PopupboxContainer {...popupboxConfigdev2} />
       <PopupboxContainer {...popupboxConfigbudget} />
       <PopupboxContainer {...popupboxConfigbiweekly} />
       <PopupboxContainer {...popupboxConfigtechblog} />
